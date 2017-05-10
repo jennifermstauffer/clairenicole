@@ -1,0 +1,248 @@
+/* general css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  color:black
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h3 {
+  color: #41464b;
+  text-transform: uppercase;
+}
+
+#about, #servics, #contact {
+  padding: 70px 0 35px 0;
+}
+
+/*home*/
+#home{
+  height:100%;
+}
+
+#home-cover{
+  height:100%;
+  background-image: url("photos/grass2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#home-content-box{
+  width:100%;
+  height:100%;
+  display: table;
+}
+
+#home-content-box-inner{
+  display: table-cell;
+  vertical-align: center;
+/*  text-align: left;*/
+}
+
+#home-heading h3 {
+  color:#fff;
+  font-size:55px;
+  font-weight:700;
+  margin:20px 0 20px 0;
+  /*text-transform: uppercase;*/
+}
+
+.heroSection {
+  padding: 250px 0 170px 0;
+}
+
+/*parallax*/
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*buttons*/
+.btn-general {
+  border-width:2px;
+  border-radius:0;
+  padding:12px 26px 12px 26px;
+  font-size::16px;
+  font-weight:400;
+  text-transform: uppercase;
+}
+.btn-white{
+  border-color: #fff;
+  color:#fff
+}
+.btn-white:hover,
+.btn-white:focus {
+  background-color: #fff;
+  color: #41464b;
+}
+}
+.btn-blue{
+  border-color: #34c6d3;
+  color:#34c6d3;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: #34c6d3;
+  color: #fff;
+}
+/*animations*/
+#home-cover{
+  animation-delay: .1s;
+  animation-duration: .5s;
+}
+#home-heading{
+  animation-delay: .5s;
+  animation-duration: .5s;
+}
+#home-btn{
+  animation-delay: .1s;
+  animation-duration: .5s;
+}
+
+/*content */
+.content-box {
+  padding: 60px 0px 60px 0;
+}
+
+.content-title h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.content-title-underline{
+  width: 30px;
+  height: 3px;
+  background-color: #34c6d4;
+  margin: 0 auto 30px auto;
+}
+
+/*services section*/
+.service-item{
+  padding: 20px 0 20px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.service-item-icon i{
+  color: #34c6d3;
+  float: left;
+  padding: 15px;
+  margin-right: 25px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+.service-item:hover .service-item-icon i {
+  color:#fff;
+  background-color: :#34c6d3;
+}
+.service-item-title h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+  margin: 0;
+  padding-left: 85px;
+}
+/*about section*/
+#about-bg-diagonal {
+  width: 60%;
+  height: 700px;
+  float: right;
+  background-image: url(./photos/about.png);
+  border-left: 2oopx solid #fff;
+  border-top: 700px solid transparent;
+}
+#about-content-box {
+  float: left;
+  height: 700px;
+}
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#about-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+#about .content-title h3 {
+  text-align: left;
+}
+#about .content-title-underline{
+  margin: 0 0 30px 0;
+}
+#about-desc p {
+  margin-bottom: 30px;
+}
+/*social*/
+
+.social-list {
+  padding-left: 0;
+}
+
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.social-icon i {
+  font-size: 17px;
+}
+
+.icon-gray i {
+  color: #64707b;
+}
+
+.social-icon i:hover {
+  color: #34c6d3
+}
+
+/*contact*/
+footer {
+  background-color: #41464b;
+  padding-top: 30px;
+  border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+#contact-left h3, #contact-right h3 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#contact-left p {
+  color: #fff;
+  margin-bottom: : 30px;
+}
+
+form .form-control {
+  background: transparent;
+  border-radius: 0;
+  border-color: #fff;
+  font-size: 17px;
+  font-weight: : 300;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
