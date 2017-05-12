@@ -90,12 +90,12 @@ h3 {
 }
 }
 .btn-blue{
-  border-color: #34c6d3;
-  color:#34c6d3;
+  border-color: ##006400;
+  color:##006400;
 }
 .btn-blue:hover,
 .btn-blue:focus {
-  background-color: #34c6d3;
+  background-color: ##006400;
   color: #fff;
 }
 /*animations*/
@@ -127,51 +127,33 @@ h3 {
 .content-title-underline{
   width: 30px;
   height: 3px;
-  background-color: #34c6d4;
+  background-color: #006400;
   margin: 0 auto 30px auto;
 }
 
 /*services section*/
-.service-item{
-  padding: 20px 0 20px 0;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-.service-item-icon i{
-  color: #34c6d3;
-  float: left;
-  padding: 15px;
-  margin-right: 25px;
-  width: 75px;
-  height: 75px;
-  text-align: center;
-}
-.service-item:hover .service-item-icon i {
-  color:#fff;
-  background-color: :#34c6d3;
-}
-.service-item-title h3 {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0 0 10px 0;
+#services-bg {
+  width: 100%;
+  /*height: 100%;*/
+  /*border-left: 100px solid #fff;*/
+  border-top: 100px solid #fff;
+  padding-bottom: 0;
 }
 
-.service-item-desc p {
-  margin: 0;
-  padding-left: 85px;
-}
-/*about section*/
+/*////////////////////about section////////////////////*/
 #about-bg-diagonal {
-  width: 60%;
+  width: 500px;
   height: 700px;
   float: right;
-  background-image: url(./photos/about.png);
-  border-left: 2oopx solid #fff;
+  background-image: url(./photos/4.png);
+  background-size: 600px 600px;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-left: 100px solid #fff;
   border-top: 700px solid transparent;
 }
 #about-content-box {
-  float: left;
-  height: 700px;
+  height: 750px;
 }
 #about-content-box-outer {
     width: 100%;
@@ -191,7 +173,78 @@ h3 {
 #about-desc p {
   margin-bottom: 30px;
 }
-/*social*/
+
+
+/*////////////////////project section////////////////////*/
+#project-bg {
+  width: 50%;
+  height: 300px;
+  float: left;
+  background-image: url(./photos/field.jpg);
+  background-position: left;
+  border-left: 200px solid transparent;
+  border-top: 700px solid transparent;
+  border-right:200px solid #fff;
+  /*padding-top: 30px;*/
+}
+#project-content-box {
+  width: 100%;
+}
+#project-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#project-content-box-inner {
+  display: table-cell;
+  vertical-align: right;
+}
+#project .content-title h3 {
+  text-align: right;
+}
+#project .content-title-underline{
+  margin: 0 0 30px 0;
+  float: right;
+}
+#project-desc p {
+  margin-bottom: 30px;
+  float: right;
+}
+
+/*////////////////////message section////////////////////*/
+#message-bg {
+  width: 600px;
+  height: 950px;
+  float: right;
+  background-image: url(./photos/photobooth2.jpg);
+}
+#message-content-box {
+  float: left;
+  height: 950px;
+  width: 450px;
+}
+#message-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#message-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+#message .content-title h3 {
+  padding-top: 30px;
+  text-align: left;
+}
+#message .content-title-underline{
+  margin: 0 0 30px 0;
+}
+#message-desc p {
+  margin-bottom: 30px;
+}
+
+
+/*/////////////////////////social////////////////////*/
 
 .social-list {
   padding-left: 0;
@@ -200,25 +253,25 @@ h3 {
 .social-list li {
   list-style: none;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 55px;
+  height: 55px;
   margin-right: 6px;
   margin-top: 10px;
 }
 
 .social-icon i {
-  font-size: 17px;
+  font-size: 35px;
 }
 
 .icon-gray i {
-  color: #64707b;
+  color: #fff;
 }
 
 .social-icon i:hover {
-  color: #34c6d3
+  color: #fff;
 }
 
-/*contact*/
+/*///////////////////contact/////////////////////*/
 footer {
   background-color: #41464b;
   padding-top: 30px;
@@ -245,4 +298,10 @@ form .form-control {
   padding: 8px 16px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+/*////////////////navigation/////////////////////*/
+
+.navbar-brand {
+  float: right;
 }
