@@ -240,14 +240,17 @@
         </div>
       <div class="col-md-6">
         <div id="contact-right">
-           <h3>Request Stickers</h3>
-            <input type="text" name="full-name" placeholder="Full Name" class="form-control" />
-            <input type="email" name="email" placeholder="Email address" class="form-control" />
-            <textarea rows="5" name="message" placeholder="Please provide your mailing address and message!"  class="form-control"></textarea>
+          <div id="form-messages"></div>
+          <form id="ajax-contact" method="post" action="mailer.php">
+             <h3>Request Stickers</h3>
+              <input type="text" name="full-name" placeholder="Full Name" class="form-control" />
+              <input type="email" name="email" placeholder="Email address" class="form-control" />
+              <textarea rows="5" name="message" placeholder="Please provide your mailing address and message!"  class="form-control"></textarea>
 
-            <div id="send-btn">
-              <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
-            </div>
+              <div id="send-btn">
+                <button class="btn btn-lg btn-general btn-white" type="submit" role="button">Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
