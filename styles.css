@@ -40,6 +40,7 @@ h3 {
   background-attachment: fixed;
 }
 
+
 #home-content-box {
   width: 100%;
   height: 100%;
@@ -52,9 +53,8 @@ h3 {
   /*  text-align: left;*/
 }
 
-#home-heading h3 {
+#home-heading h1 {
   color: #fff;
-  font-size: 55px;
   font-weight: 700;
   margin: 20px 0 20px 0;
   /*text-transform: uppercase;*/
@@ -163,9 +163,9 @@ h3 {
 /*////////////////////about section////////////////////*/
 #about-bg-diagonal {
   width: 500px;
-  height: 700px;
+  height: 500px;
   float: right;
-  background-image: url(./photos/4.png);
+  background-image: url(photos/4.png);
   background-size: 600px 600px;
   background-repeat: no-repeat;
   background-position: right;
@@ -193,17 +193,33 @@ h3 {
 #about-desc p {
   margin-bottom: 30px;
 }
-
+#about-bg-diagonal2 {
+  width: 100%;
+  height: 500px;
+  float: right;
+  background-image: url(photos/4.png);
+  background-size: 100% *;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 /*////////////////////project section////////////////////*/
 #project-bg {
   width: 50%;
   height: 300px;
   float: left;
-  background-image: url(./photos/field.jpg);
+  background-image: url(photos/field.jpg);
   background-position: left;
   border-left: 200px solid transparent;
   border-top: 700px solid transparent;
   border-right: 200px solid #fff;
+  /*padding-top: 30px;*/
+}
+#project-bg2 {
+  width: 100%;
+  height: 300px;
+  float: left;
+  background-image: url(photos/field.jpg);
+  background-position: left;
   /*padding-top: 30px;*/
 }
 #project-content-box {
@@ -232,15 +248,22 @@ h3 {
 
 /*////////////////////message section////////////////////*/
 #message-bg {
-  width: 600px;
+  width: 800px;
   height: 950px;
   float: right;
-  background-image: url(./photos/photobooth2.jpg);
+  background-image: url(photos/photobooth2.jpg);
+}
+#message-bg2 {
+  width: 100%;
+  height: 350px;
+  float: right;
+  background-  right;
+  background-image: url(photos/photobooth2.jpg);
 }
 #message-content-box {
   float: left;
   height: 950px;
-  width: 450px;
+  width: 100%;
 }
 #message-content-box-outer {
   width: 100%;
@@ -428,4 +451,35 @@ appearance: none; {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+#iframeinstagram, #iframeinstagram ul, #iframeinstagram div, #iframeinstagram .container{
+  max-height: 700px;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.bottom-img{
+  width: 50%;
+  max-height: 350px;
+  float: left;
+  overflow: hidden;
+}
+.bottom-img-2{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1150px) {
+  #home-cover {
+    height: 100%;
+    background-image: url("photos/grass2c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+  }
+
+  .heroSection {
+      padding: 370px 0 50px 0 !important;
+  }
 }
